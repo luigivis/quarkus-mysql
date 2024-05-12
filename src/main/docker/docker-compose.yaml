@@ -1,0 +1,10 @@
+version: '3.8'
+name: quarkus-example-test
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      - MYSQL_DATABASE=quarkus
+      - MYSQL_ROOT_PASSWORD=quarkus
+    ports:
+      - '3306:3306'
